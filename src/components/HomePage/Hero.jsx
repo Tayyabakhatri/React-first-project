@@ -1,8 +1,10 @@
 import React from "react";
+import "./Homepage.css"
 
 function Hero() {
   return (
-    <div className="grid  grid-cols-1 lg:grid-cols-2 place-items-center gap-4  ">
+   <div className="hero">
+     <div className="grid  grid-cols-1 lg:grid-cols-2 place-items-center gap-4  ">
       <div className="grid place-items-center lg:pl-[100px]">
         <div className="lg:text-start pl-5">
         <p className=" mt-[50px]  font-bold text-[3rem] lg:text-[5rem] lg:font-semibold ">
@@ -17,6 +19,7 @@ function Hero() {
       </div>
 
     </div>
+   </div>
   );
 }
 

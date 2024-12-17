@@ -1,8 +1,9 @@
 import React from "react";
+import "./Homepage.css"
 
 export default function Section3() {
   return (
-    <div>
+    <div className="section3">
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5">
         <div>
           <img src="/Mask group (16).png" alt="" className="w-100 h-100" />

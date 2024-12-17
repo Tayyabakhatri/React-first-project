@@ -1,8 +1,9 @@
 import React from "react";
-
+import "./Homepage.css"
 function Section1() {
   return (
-    <div className=" grid  grid-cols-1 lg:grid-cols-2 place-items-center gap-4 ">
+  <div className="pageStyle">
+      <div className=" grid  grid-cols-1 lg:grid-cols-2 place-items-center gap-4 ">
       <div className="bg-[ #fbebb5] hover:bg-[#faf4f4] ease-in duration-200 p-5">
         <img
           src="/Mask group (5).png"
@@ -22,6 +23,7 @@ function Section1() {
         <p className="underline underline-offset-2 text-[20px] text-start py-2">View More</p>
       </div>
     </div>
+  </div>
   );
 }
 
