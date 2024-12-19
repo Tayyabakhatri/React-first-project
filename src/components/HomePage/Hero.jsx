@@ -3,7 +3,7 @@ import "./Homepage.css"
 
 function Hero() {
   return (
-   <div className="hero">
+   <div className="hero p-0">
      <div className="grid  grid-cols-1 lg:grid-cols-2 place-items-center gap-4  ">
       <div className="grid place-items-center lg:pl-[100px]">
         <div className="lg:text-start pl-5">
