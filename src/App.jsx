@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
-// import "./App.css";
+import React from "react";
+// import React, { useState } from "react";
 import Hero from "./components/HomePage/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Section1 from "./components/HomePage/Section1.jsx";
@@ -11,6 +10,7 @@ import Blog from "./components/HomePage/Blog.jsx";
 import Homesocials from "./components/HomePage/Homesocials.jsx";
 import Footer from "./components/HomePage/Footer.jsx";
 import ShopFooter from "./components/Shop/ShopFooter.jsx";
+import Order from "./components/OrderPage/Order.jsx";
 
 function App() {
   let createInput = () => {
@@ -18,7 +18,7 @@ function App() {
       <div className=" flex gap-5">
         <input
           type="text"
-          Placeholder="Enter Your Email address "
+          placeholder="Enter Your Email address "
           className=" border-b-2 border-black"
         />
         <button className=" border-b-2 border-black">Subscribe</button>
@@ -151,6 +151,7 @@ function App() {
 <div className="my-4 mx-5">2022 Meubel House. All rights reverved</div>
        
       {/* //shop page end */}
+      <Order/>
     </>
   );
 }
