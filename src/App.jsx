@@ -10,28 +10,22 @@ import Section3 from "./components/HomePage/Section3.jsx";
 import Blog from "./components/HomePage/Blog.jsx";
 import Homesocials from "./components/HomePage/Homesocials.jsx";
 import Footer from "./components/HomePage/Footer.jsx";
+import ShopFooter from "./components/Shop/ShopFooter.jsx";
 
 function App() {
-  
-  
- 
-  let createInput=()=>{
+  let createInput = () => {
     return (
-      <input type="text" placeholser="Enter Your Feedback"/>
-    )
-    // let Input = document.createElement('input')
-    // Input.setAttribute("placeholder","Enter your Feedback")
-    // let div = document.createElement('div')
-    // div.appendChild(Input)
-  }
-  
-    
-    
+      <div className=" flex gap-5">
+        <input
+          type="text"
+          Placeholder="Enter Your Email address "
+          className=" border-b-2 border-black"
+        />
+        <button className=" border-b-2 border-black">Subscribe</button>
+      </div>
+    );
+  };
 
-   
-
-  // createInput()
-  
   return (
     <>
       <Navbar />
@@ -66,8 +60,8 @@ function App() {
           <Homesocials />
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 p-5 m-[30px] lg:m-[90px]">
-        <div className="flex place-items-center mr-5">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 p-1 lg:p-5 m-[30px] lg:m-[90px]">
+        <div className="flex place-items-center lg:mr-1">
           <p className="text-slate-500">
             {" "}
             400 University Drive Suite 200 Coral Gables, FL 33134 USA
@@ -87,15 +81,18 @@ function App() {
           secLink="Returns"
           thdLink="Privacy Policies"
         />
-       
-   
-       
-        <Footer head="Newsletter" firstLink={createInput()} />
+
+        <div className="flex flex-wrap">
+        <Footer head="Newsletter" firstLink={createInput()}/>
+        </div>
       </div>
+      <hr className="mx-5" />
 
       {/* //shop page start */}
+
       <div className="w-[100%] relative">
-        <img src="/Rectangle 1.png" alt="" className="w-[100%] mt-[5em] " />
+        <Navbar />
+        <img src="/Rectangle 1.png" alt="" className="w-[100%] mt-[2em] " />
         <img
           src="/Meubel House_Logos-05.png"
           alt=""
@@ -121,6 +118,38 @@ function App() {
         <Shop src="/Reclaimed teak Sideboard 1.png" text="Rs. 258,200.00" />
         <Shop src="/Mask group (19).png" text="Rs. 115,000.00 " />
       </div>
+     <div className="flex flex-wrap gap-4 justify-around footer py-5">
+     <ShopFooter heading="Free Delivery" text ="For all oders over $50, consectetur adipim scing elit."/>
+     <ShopFooter heading="90 Days Return" text ="If goods have problems, consectetur adipim scing elit."/>
+     <ShopFooter heading="Secure Payment" text ="For all oders over $50, consectetur adipim scing elit."/>
+     </div>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 p-5 m-[30px] lg:m-[90px]">
+        <div className="flex place-items-center mr-5">
+          <p className="text-slate-500">
+            {" "}
+            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+          </p>
+        </div>
+
+        <Footer
+          head="Link"
+          firstLink="Home"
+          secLink="Shop"
+          thdLink="About"
+          fthLink="Contact"
+        />
+        <Footer
+          head="Help"
+          firstLink="Payment Options"
+          secLink="Returns"
+          thdLink="Privacy Policies"
+        />
+
+        <Footer head="Newsletter" firstLink={createInput()} />
+      </div>
+      <hr className="mx-5" />
+<div className="my-4 mx-5">2022 Meubel House. All rights reverved</div>
+       
       {/* //shop page end */}
     </>
   );
