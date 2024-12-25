@@ -2,17 +2,17 @@ import React from "react";
 import "./Order.css";
 
 export default function Order() {
-    async function funs() {
-        fetch('https://dummyjson.com/RESOURCE/?limit=10&skip=5&select=key1,key2,key3',{
-            method:'Get',
+  //   async function funs() {
+  //     await fetch ('https://dummyjson.com/RESOURCE/?limit=10&skip=5&select=key1,key2,key3',{
+  //           method:'Get',
 
-        })
-        .then(response=>response.json())
-        .then(data=>console.log(data))
-        .catch(error=>console.log(error))
-
-    }
-  funs()
+  //       })
+  //       .then(response=>response.json())
+  //       .then(data=>console.log(data))
+        
+  //       .catch(error=>console.log(error))
+  //     }
+  // funs()
   return (
     <div className="flex flex-wrap justify-evenly">
       <div className="w-[553px] h-[500px]">

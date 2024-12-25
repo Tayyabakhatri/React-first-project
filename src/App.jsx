@@ -1,4 +1,5 @@
-import React from "react";
+import "/App.css"
+import React, { useState } from "react";
 // import React, { useState } from "react";
 import Hero from "./components/HomePage/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
@@ -13,6 +14,13 @@ import ShopFooter from "./components/Shop/ShopFooter.jsx";
 import Order from "./components/OrderPage/Order.jsx";
 
 function App() {
+  //dark mood functionality start
+  let [Lit, isLit] = useState(true);
+  const changeMood = () => {
+    isLit(!Lit)
+    console.log(Lit);
+  };
+  //dark mood functionality end
   let createInput = () => {
     return (
       <div className=" flex gap-5">
@@ -28,6 +36,12 @@ function App() {
 
   return (
     <>
+      <div>
+        <label htmlFor="checkBox">
+          <input onClick={changeMood} type="checkBox" id="checkBox" className="hidden" />
+          
+        </label>
+      </div>
       <Navbar />
       <Hero />
       <Section1 />
@@ -83,7 +97,7 @@ function App() {
         />
 
         <div className="flex flex-wrap">
-        <Footer head="Newsletter" firstLink={createInput()}/>
+          <Footer head="Newsletter" firstLink={createInput()} />
         </div>
       </div>
       <hr className="mx-5" />
@@ -118,11 +132,20 @@ function App() {
         <Shop src="/Reclaimed teak Sideboard 1.png" text="Rs. 258,200.00" />
         <Shop src="/Mask group (19).png" text="Rs. 115,000.00 " />
       </div>
-     <div className="flex flex-wrap gap-4 justify-around footer py-5">
-     <ShopFooter heading="Free Delivery" text ="For all oders over $50, consectetur adipim scing elit."/>
-     <ShopFooter heading="90 Days Return" text ="If goods have problems, consectetur adipim scing elit."/>
-     <ShopFooter heading="Secure Payment" text ="For all oders over $50, consectetur adipim scing elit."/>
-     </div>
+      <div className="flex flex-wrap gap-4 justify-around footer py-5">
+        <ShopFooter
+          heading="Free Delivery"
+          text="For all oders over $50, consectetur adipim scing elit."
+        />
+        <ShopFooter
+          heading="90 Days Return"
+          text="If goods have problems, consectetur adipim scing elit."
+        />
+        <ShopFooter
+          heading="Secure Payment"
+          text="For all oders over $50, consectetur adipim scing elit."
+        />
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 p-5 m-[30px] lg:m-[90px]">
         <div className="flex place-items-center mr-5">
           <p className="text-slate-500">
@@ -148,10 +171,10 @@ function App() {
         <Footer head="Newsletter" firstLink={createInput()} />
       </div>
       <hr className="mx-5" />
-<div className="my-4 mx-5">2022 Meubel House. All rights reverved</div>
-       
+      <div className="my-4 mx-5">2022 Meubel House. All rights reverved</div>
+
       {/* //shop page end */}
-      <Order/>
+      <Order />
     </>
   );
 }
