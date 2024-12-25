@@ -7,7 +7,7 @@ function Navbar() {
     <>
  
 
-      <div className="navbar justify-content-center ">
+      <div className="navbar justify-content-end ">
         <button
           className="navbar-toggler"
           type="button"
@@ -19,28 +19,11 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className=" m-4">
-          <ul className="nav justify-content-center gap-4">
-            <li className="nav-item">
-              <a aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#">Shop</a>
-            </li>
-            <li className="nav-item">
-              <a href="#">About</a>
-            </li>
-            <li className="nav-item">
-              <a href="#" tabindex="-1" aria-disabled="true">
-                Contact
-              </a>
-            </li>
+        <div className="d-flex gap-5 align-items-center">
+         <input type="text" placeholder="search"className="border rounded"/>
             <i className="fa-solid fa-magnifying-glass icon"></i>
             <i className="fa-solid fa-cart-shopping icon"></i>
             <i className="fa-solid fa-heart icon"></i>
-          </ul>
         </div>
         <div className="flex gap-5"></div>
       </div>
