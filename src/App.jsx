@@ -1,5 +1,6 @@
-import "/App.css"
-import React, { useState } from "react";
+import "/App.css";
+import React, { useState, useEffect } from "react";
+import { IoMoonSharp, IoMoonOutline } from "react-icons/io5";
 // import React, { useState } from "react";
 import Hero from "./components/HomePage/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
@@ -12,14 +13,23 @@ import Homesocials from "./components/HomePage/Homesocials.jsx";
 import Footer from "./components/HomePage/Footer.jsx";
 import ShopFooter from "./components/Shop/ShopFooter.jsx";
 import Order from "./components/OrderPage/Order.jsx";
+import Api from "./components/Api/Api.jsx";
 
 function App() {
   //dark mood functionality start
-  let [Lit, isLit] = useState(true);
+  let [Lit, isLit] = useState(false);
   const changeMood = () => {
-    isLit(!Lit)
+    isLit(!Lit);
     console.log(Lit);
   };
+  useEffect(() => {
+    if (Lit) {
+      document.body.classList.add("dark");
+    } else if (!Lit) {
+      document.body.classList.remove("dark");
+    }
+  }, [Lit]);
+
   //dark mood functionality end
   let createInput = () => {
     return (
@@ -36,10 +46,16 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="d-flex gap-2 align-center py-3">
+        <p>Coutomize</p>
         <label htmlFor="checkBox">
-          <input onClick={changeMood} type="checkBox" id="checkBox" className="hidden" />
-          
+          <input
+            onClick={changeMood}
+            type="checkBox"
+            id="checkBox"
+            className="hidden"
+          />
+          {Lit ? <IoMoonSharp /> : <IoMoonOutline />}
         </label>
       </div>
       <Navbar />
@@ -175,6 +191,7 @@ function App() {
 
       {/* //shop page end */}
       <Order />
+      <Api/>
     </>
   );
 }
