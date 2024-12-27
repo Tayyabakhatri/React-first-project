@@ -20,7 +20,7 @@ export default function Blog({ src, text, date, time }) {
                 {time}
               </div>
               <div>
-                <i class="fa-regular fa-calendar-days icon"></i>
+                <i className="fa-regular fa-calendar-days icon"></i>
                 {date}
               </div>
             </div>

@@ -16,7 +16,7 @@ export default function Section2() {
         <div>
           {" "}
           {/* card 1 */}
-          <div class="max-w-sm bg-white  ">
+          <div className="max-w-sm bg-white  ">
             <a href="#">
               <img
                 class="rounded-t-lg w-[100%]"
@@ -33,7 +33,7 @@ export default function Section2() {
         <div>
           {" "}
           {/* card 2 */}
-          <div class="max-w-sm bg-white  ">
+          <div className="max-w-sm bg-white  ">
             <a href="#">
               <img
                 class="rounded-t-lg w-[100%]"

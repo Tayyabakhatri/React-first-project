@@ -1,14 +1,12 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar.jsx";
+
 
 export default function Shop(props) {
   return (
     <>
-      
-
-      {/* <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-[5rem] m-[3rem]  flex justify-center"> */}
+    
       {/* card 1 */}
-      <div class="max-w-sm bg-white sm:p-2 md:p-4 ">
+      <div className="max-w-sm bg-white sm:p-2 md:p-4 ">
         <a href="#">
           <img class="rounded-t-lg w-[100%]" src={props.src} alt="" />
         </a>
@@ -21,7 +19,7 @@ export default function Shop(props) {
           >
             Read more
             <svg
-              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -29,9 +27,9 @@ export default function Shop(props) {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>

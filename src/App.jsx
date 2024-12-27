@@ -60,7 +60,7 @@ function App() {
       </div>
       <Navbar />
       <Hero />
-      <Section1 />
+      {/* <Section1 /> */}
       <Section2 />
       <Section3 />
       <div className="my-5 p-3 flex flex-wrap justify-around ">
@@ -117,18 +117,6 @@ function App() {
         </div>
       </div>
       <hr className="mx-5" />
-
-      {/* //shop page start */}
-
-      <div className="w-[100%] relative">
-        <Navbar />
-        <img src="/Rectangle 1.png" alt="" className="w-[100%] mt-[2em] " />
-        <img
-          src="/Meubel House_Logos-05.png"
-          alt=""
-          className="absolute bottom-[50%] left-[50%]"
-        />
-      </div>
 
       <div className=" my-5 px-[50px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[40px] ">
         <Shop src="/Mask group (6).png" text="Rs. 258,200.00" />
@@ -191,7 +179,8 @@ function App() {
 
       {/* //shop page end */}
       <Order />
-      <Api/>
+        <Api />
+      
     </>
   );
 }
