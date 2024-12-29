@@ -1,14 +1,9 @@
-/* .input{
-    border
-} */
  .footer{
     background-color: #fdf4f0;
  }
  body{
     max-width: 1268px;
     margin: auto;
-    /* display: flex;
-    justify-content: center; */
  }
  .hidden{
    visibility: hidden;

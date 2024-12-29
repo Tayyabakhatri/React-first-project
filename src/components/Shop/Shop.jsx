@@ -4,7 +4,7 @@ import React from "react";
 export default function Shop(props) {
   return (
     <>
-    
+  
       {/* card 1 */}
       <div className="max-w-sm bg-white sm:p-2 md:p-4 ">
         <a href="#">

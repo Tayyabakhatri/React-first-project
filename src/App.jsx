@@ -179,7 +179,7 @@ function App() {
 
       {/* //shop page end */}
       <Order />
-        <Api />
+        {/* <Api /> */}
       
     </>
   );
