@@ -12,7 +12,7 @@ export default function Order() {
 80px]">
             {" "}
             <img
-              src="src/assets/Rectangle 14.png"
+              src="/Rectangle 14.png"
               alt=""
               className="w-[76px] h-[80px]"
             />
@@ -22,7 +22,7 @@ export default function Order() {
 80px]">
             {" "}
             <img
-              src="src/assets/Rectangle 14.png"
+              src="/Rectangle 14.png"
               alt=""
               className="w-[76px] h-[80px]"
             />
@@ -32,7 +32,7 @@ export default function Order() {
 80px]">
             {" "}
             <img
-              src="src/assets/Rectangle 14.png"
+              src="/Rectangle 14.png"
               alt=""
               className="w-[76px] h-[80px]"
             />
@@ -42,14 +42,14 @@ export default function Order() {
 80px]">
             {" "}
             <img
-              src="src/assets/Rectangle 14.png"
+              src="/Rectangle 14.png"
               alt=""
               className="w-[76px] h-[]80px]"
             />
           </div>
 
           <div className="row-span-5 w-100  px-4 w-[423px] h-[500px]">
-            <img src="src/assets/Rectangle 14.png" alt="" className="w-[481px] h-[391pxpx]" />
+            <img src="/Rectangle 14.png" alt="" className="w-[481px] h-[391pxpx]" />
           </div>
         </div>
       </div>
