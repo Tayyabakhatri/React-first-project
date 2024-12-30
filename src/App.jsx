@@ -65,19 +65,19 @@ function App() {
       <Section3 />
       <div className="my-5 p-3 flex flex-wrap justify-around ">
         <Blog
-          src="src/assets/Rectangle 13.png"
+          src="/Rectangle 13.png"
           text="Going all-in with millennial design"
           time="5min"
           date="12th Oct 2022"
         />
         <Blog
-          src="src/assets/Rectangle 14.png"
+          src="/Rectangle 14.png"
           text="Going all-in with millennial design"
           time="20min"
           date="24th Oct 2022"
         />
         <Blog
-          src="src/assets/Rectangle 15.png"
+          src="/Rectangle 15.png"
           text="Going all-in with millennial design"
           time="15min"
           date="30th Oct 2022"
