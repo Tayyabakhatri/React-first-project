@@ -13,3 +13,6 @@
   .icon{
    color: #0f0f0f;
   }
+  #blog{
+    display: flex;
+  }
