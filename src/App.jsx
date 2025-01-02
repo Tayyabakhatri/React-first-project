@@ -35,16 +35,9 @@ function App() {
         </label>
       </div>
       <Navbar />
-
-      {/* shop start*/}
-    
-
-      {/* <div className="flex flex-wrap gap-4 justify-around footer py-5">
-        <ShopFooter />
-      </div> */}
-      
     </>
   );
 }
+      
 
 export default App;
