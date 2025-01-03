@@ -6,20 +6,23 @@ export default function ShopFooter() {
     {
       heading: "Free Delivery",
       text: "For all oders over $50, consectetur adipim scing elit.",
+      id:0
     },
     {
       heading: "90 Days Return",
       text: "If goods have problems, consectetur adipim scing elit.",
+      id:1
     },
     {
       heading: "Secure Payment",
       text: "For all oders over $50, consectetur adipim scing elit.",
+      id:2
     },
   ];
   return (
     <>
       {array.map((data) => (
-        <div>
+        <div key={data.id}>
           <a href="#" className="block max-w-sm p-6  ">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {data.heading}
