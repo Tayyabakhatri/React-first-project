@@ -1,7 +1,11 @@
 import React from "react";
 import "./Order.css";
+// import {productDetail} from '../Shop/Shop'
 
 export default function Order() {
+  // productDetail(data)
+  // console.log(data);
+  
   return (
     <div className="flex flex-wrap justify-evenly">
       <div className="w-[553px] h-[500px]">
