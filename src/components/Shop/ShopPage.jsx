@@ -7,7 +7,10 @@ export default function ShopPage() {
   
   return (
     <>
-       <div className=" my-5 px-[50px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[40px] ">
+    <div>
+      <img src="public/Group 78.png" alt=""  className="w-full"/>
+    </div>
+       <div className=" my-5 px-[50px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[40px] flex ">
         <Shop />
       </div>
        <div className="flex flex-wrap gap-4 justify-around footer py-5">

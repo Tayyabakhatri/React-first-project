@@ -1,7 +1,7 @@
 import "/App.css";
 import React, { useState, useEffect } from "react";
 import { IoMoonSharp, IoMoonOutline } from "react-icons/io5";
-import Navbar from "./components/Navbar/Navbar.jsx";
+import CustomNavbar from "./components/Navbar/CustomNavbar.jsx";
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
           {Lit ? <IoMoonSharp /> : <IoMoonOutline />}
         </label>
       </div>
-      <Navbar />
+      <CustomNavbar />
     </>
   );
 }

@@ -2,44 +2,39 @@ import React from "react";
 import "./Order.css";
 
 export default function Order() {
-
   return (
     <div className="flex flex-wrap justify-evenly">
       <div className="w-[553px] h-[500px]">
         <div className="grid grid-rows-5 grid-flow-col">
-          <div className="col-span-1 px-4 w-[
+          <div
+            className="col-span-1 px-4 w-[
 76px] h-[
-80px]">
+80px]"
+          >
             {" "}
-            <img
-              src="/Rectangle 14.png"
-              alt=""
-              className="w-[76px] h-[80px]"
-            />
+            <img src="/Rectangle 14.png" alt="" className="w-[76px] h-[80px]" />
           </div>
-          <div className="col-span-1 px-4 w-[
+          <div
+            className="col-span-1 px-4 w-[
 76px] h-[
-80px]">
+80px]"
+          >
             {" "}
-            <img
-              src="/Rectangle 14.png"
-              alt=""
-              className="w-[76px] h-[80px]"
-            />
+            <img src="/Rectangle 14.png" alt="" className="w-[76px] h-[80px]" />
           </div>
-          <div className="col-span-1 px-4 w-[
+          <div
+            className="col-span-1 px-4 w-[
 76px] h-[
-80px]">
+80px]"
+          >
             {" "}
-            <img
-              src="/Rectangle 14.png"
-              alt=""
-              className="w-[76px] h-[80px]"
-            />
+            <img src="/Rectangle 14.png" alt="" className="w-[76px] h-[80px]" />
           </div>
-          <div className="col-span-1 px-4 w-[
+          <div
+            className="col-span-1 px-4 w-[
 76px] h-[
-80px]">
+80px]"
+          >
             {" "}
             <img
               src="/Rectangle 14.png"
@@ -49,7 +44,11 @@ export default function Order() {
           </div>
 
           <div className="row-span-5 w-100  px-4 w-[423px] h-[500px]">
-            <img src="/Rectangle 14.png" alt="" className="w-[481px] h-[391pxpx]" />
+            <img
+              src="/Rectangle 14.png"
+              alt=""
+              className="w-[481px] h-[391pxpx]"
+            />
           </div>
         </div>
       </div>
@@ -70,7 +69,9 @@ export default function Order() {
           <div className="pinkbg px-2 rounded w-[30px] h-[30px]">XL</div>
           <div className="lightpinkbg px-2 rounded w-[30px] h-[30px]">XS</div>
         </div>
-        <button className="border-2 border-black w-[215px] h-[64px] rounded-[15px] my-4">Add to Cart</button>
+        <button className="border-2 border-black w-[215px] h-[64px] rounded-[15px] my-4">
+          Add to Cart
+        </button>
       </div>
     </div>
   );
