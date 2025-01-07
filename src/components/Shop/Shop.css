@@ -1,3 +1,9 @@
 .footer{
     background-color: #fdf4f0;
 }
+.visible{
+    visibility: visible;
+}
+.invisible{
+    visibility: hidden;
+}
