@@ -3,6 +3,7 @@ import "./Homepage.css";
 import Footer from "./Footer";
 import Blog from "./Blog"
 
+
 function Hero() {
   return (
     <>
