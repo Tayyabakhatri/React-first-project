@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 // function productDetail() {
 //   const { id } = useParams();
 // }
-export default function Order() {
+export default function Order(props) {
   //   let array = [
   //     { src: "/Mask group (16).png", text: 200000, key: 0 },
   //     { src: "/Mask group (15).png", text: 250000, key: 1 },
@@ -24,6 +24,7 @@ export default function Order() {
   //     { src: "/SJP_0825  1.png", text: 900000, key: 15 },
   //   ];
   //   const product = array.find((item) => item.id === id);
+console.log(props.product);
 
   return (
     <>
@@ -35,8 +36,16 @@ export default function Order() {
 76px] h-[
 80px]"
             >
-              {" "}
-              <img src={product.src} alt="" className="w-[76px] h-[80px]" />
+              
+              <img src={props.product.src} alt="" className="w-[76px] h-[80px]" />
+            </div>
+            <div
+              className="col-span-1 px-4 w-[
+76px] h-[
+80px]"
+            >
+             
+              <img src={props.product.src} alt="" className="w-[76px] h-[80px]" />
             </div>
             <div
               className="col-span-1 px-4 w-[
@@ -44,7 +53,7 @@ export default function Order() {
 80px]"
             >
               {" "}
-              <img src={product.src} alt="" className="w-[76px] h-[80px]" />
+              <img src={props.product.src} alt="" className="w-[76px] h-[80px]" />
             </div>
             <div
               className="col-span-1 px-4 w-[
@@ -52,19 +61,11 @@ export default function Order() {
 80px]"
             >
               {" "}
-              <img src={product.src} alt="" className="w-[76px] h-[80px]" />
-            </div>
-            <div
-              className="col-span-1 px-4 w-[
-76px] h-[
-80px]"
-            >
-              {" "}
-              <img src={product.src} alt="" className="w-[76px] h-[]80px]" />
+              <img src={props.product.src} alt="" className="w-[76px] h-[]80px]" />
             </div>
 
             <div className="row-span-5 w-100  px-4 w-[423px] h-[500px]">
-              <img src={product.src} alt="" className="w-[481px] h-[391pxpx]" />
+              <img src={props.product.src} alt="" className="w-[481px] h-[391pxpx]" />
             </div>
           </div>
         </div>
@@ -73,7 +74,7 @@ export default function Order() {
             Asgaard sofa
           </h1>
           <p className="font-[500] text-[24px] text-slate-500">
-            {product.text}
+            {props.product.text}
           </p>
           <p
             className="font-[400] text-[13px] leading-[

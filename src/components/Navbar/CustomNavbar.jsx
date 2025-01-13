@@ -14,23 +14,6 @@ export default function CustomNavbar() {
   return (
     <>
       <Router>
-        {/* <div>
-          <nav className="flex">
-            <ul>
-              <li>
-                <Link to="/">
-                  <IoHomeSharp />
-                </Link>
-              </li>
-              <li>
-                <Link to="/shop">
-                  <FaCartShopping />
-                </Link>
-              </li>
-            </ul>
-          </nav> */}
-        {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
         <Navbar bg="light" data-bs-theme="light">
           <Container>
             <Navbar.Brand>Navbar</Navbar.Brand>

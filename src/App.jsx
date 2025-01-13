@@ -22,7 +22,7 @@ function App() {
   //dark mood functionality end
   return (
     <>
-      <div className="d-flex gap-2 align-center py-3">
+      <div className="d-flex gap-2 align-center py-3 mx-4">
         <p>Coutomize</p>
         <label htmlFor="checkBox">
           <input
