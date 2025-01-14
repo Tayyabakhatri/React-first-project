@@ -3,6 +3,7 @@ import "./Navbar.css";
 import ShopPage from "../Shop/ShopPage.jsx";
 import Hero from "../HomePage/Hero.jsx";
 import Myaccount from "../My-account/Myaccount.jsx";
+import Contact from "../Contact/Contact.jsx";
 import { IoHomeSharp } from "react-icons/io5";
 import { FaCartShopping } from "react-icons/fa6";
 
@@ -28,8 +29,8 @@ export default function CustomNavbar() {
               <Nav.Link as={Link} to="/myaccount">
                 My Account
               </Nav.Link>
-              <Nav.Link as={Link} to="/about">
-                About
+              <Nav.Link as={Link} to="/contact">
+                Contact
               </Nav.Link>
             </Nav>
           </Container>
@@ -38,6 +39,7 @@ export default function CustomNavbar() {
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/" element={<Hero />} />
           <Route path ='/myaccount' element={<Myaccount/>}/>
+          <Route path ='/contact' element={<Contact/>}/>
         </Routes>
         {/* </div> */}
       </Router>
