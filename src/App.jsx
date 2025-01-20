@@ -2,6 +2,7 @@ import "/App.css";
 import React, { useState, useEffect } from "react";
 import { IoMoonSharp, IoMoonOutline } from "react-icons/io5";
 import CustomNavbar from "./components/Navbar/CustomNavbar.jsx";
+import Parent from "./components/Parent.jsx";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         </label>
       </div>
       <CustomNavbar />
+      <Parent name="parent div"/>
     </>
   );
 }
