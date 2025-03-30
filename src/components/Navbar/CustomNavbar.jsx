@@ -18,7 +18,7 @@ export default function CustomNavbar() {
       <Router>
         <Navbar bg="light" data-bs-theme="light">
           <Container>
-            <Navbar.Brand>Navbar</Navbar.Brand>
+            {/* <Navbar.Brand>Navbar</Navbar.Brand> */}
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/">
                 Home

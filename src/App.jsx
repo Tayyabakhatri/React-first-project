@@ -7,23 +7,23 @@ import Parent from "./components/Parent.jsx";
 
 function App() {
   //dark mood functionality start
-  let [Lit, isLit] = useState(false);
-  const changeMood = () => {
-    isLit(!Lit);
-    console.log(Lit);
-  };
-  useEffect(() => {
-    if (Lit) {
-      document.body.classList.add("dark");
-    } else if (!Lit) {
-      document.body.classList.remove("dark");
-    }
-  }, [Lit]);
+  // let [Lit, isLit] = useState(false);
+  // const changeMood = () => {
+  //   isLit(!Lit);
+  //   console.log(Lit);
+  // };
+  // useEffect(() => {
+  //   if (Lit) {
+  //     document.body.classList.add("dark");
+  //   } else if (!Lit) {
+  //     document.body.classList.remove("dark");
+  //   }
+  // }, [Lit]);
 
   //dark mood functionality end
   return (
     <>
-      <div className="d-flex gap-2 align-center py-3 mx-4">
+      {/* <div className="d-flex gap-2 align-center py-3 mx-4">
         <p>Coutomize</p>
         <label htmlFor="checkBox">
           <input
@@ -34,7 +34,7 @@ function App() {
           />
           {Lit ? <IoMoonSharp /> : <IoMoonOutline />}
         </label>
-      </div>
+      </div> */}
       <CustomNavbar />
       <Parent name="parent div"/>
     </>
