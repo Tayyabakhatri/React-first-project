@@ -8,9 +8,9 @@ import { IoHomeSharp } from "react-icons/io5";
 import { FaCartShopping } from "react-icons/fa6";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 export default function CustomNavbar() {
   return (
@@ -38,8 +38,8 @@ export default function CustomNavbar() {
         <Routes>
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/" element={<Hero />} />
-          <Route path ='/myaccount' element={<Myaccount/>}/>
-          <Route path ='/contact' element={<Contact/>}/>
+          <Route path="/myaccount" element={<Myaccount />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         {/* </div> */}
       </Router>
